@@ -1,0 +1,90 @@
+*{
+    outline:black solid 1px;
+}
+div.wrapper{
+    background-color: silver;
+    margin:0px auto;
+    height: auto;
+    padding: 15px;
+}
+    div.wrapper div.header{
+        min-height: 130px;
+        background-color: green;
+        margin-bottom: 20px;
+    }
+
+    
+    div.wrapper div.navigation{
+        width: 200px;
+        min-height: 300px;
+        background-color: blue;
+        vertical-align: top;
+    }
+    
+    div.wrapper div.main_content{
+        min-height: 400px;
+        background-color: red;
+        padding: 12px;
+    }
+
+        div.wrapper div.main_content div.subcontents{
+            min-height: 130px;
+            background-color: yellow;
+            margin-bottom: 10px;
+            /*margin-right: 15px; */
+        }
+
+         
+        div.wrapper div.main_content div.advertisement{
+            min-height: 100px;
+            background-color: purple;
+        }
+
+@media only screen and (max-width: 480px){
+    div.wrapper div.navigation{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:481px){
+    div.wrapper div.navigation{
+        display: none;
+    }
+    div.wrapper div.main_content div.subcontents{
+        display:inline-block;
+        min-height: 130px;
+        background-color: yellow;
+        width: 45%;
+        margin-right: 20px;
+    }
+    div.wrapper div.main_content{
+        padding: 12px 0px 12px 28px;
+    }
+    div.wrapper div.main_content div.advertisement{
+        margin-right: 35px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .wrapper{
+        width: 950px;
+        background-color: silver;
+        margin: 0px auto;
+        padding: 20px;
+        height: auto;
+    }
+        .navigation{
+            width: 25%;
+            display: inline-block;
+        }
+        .main_content{
+            width: 700px;
+            min-height: 400px;
+            background-color: red;
+            padding:10px;
+            margin-left: 25px;
+        }
+            .subcontents{
+                width: 25%;
+                heig
+            }
+}
